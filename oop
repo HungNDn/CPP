@@ -1,0 +1,35 @@
+Các thuộc tính oop :
+
+- tính đóng gói: 
+tính đóng gói như kiểu ta tạo ra 1 sản phẩm được đóng gói lại thành 1 sp hoàn chỉnh, 
+nó sẽ bao gồm các tính chất, thành phần, các phương thức liên quan đến nhau. 
+Ở trong tính đóng gói này người ta có thể sử dụng 1 kỹ thuật để che giấu những phương thức
+người ta muốn ở bên trong và chỉ public những thông tin cần thiết ra bên ngoài như kiểu thông tin định lượng,
+các set định lượng ... dựa vào hàm get(), set(). (người ta gọi kỹ thuật đó là data hiding).
+- tính kế thừa:
+tính kế thừa là ta có thể sử dụng lại các thuộc tính, phương thức từ lớp cha để tránh trùng lặp code.
+- tính trừu tượng:
+như kiểu chúng ta sẽ trừu tượng hoá 1 quy trình, 1 đối tượng nào đó thành 1 thứ chung, 
+mà ở đó người dùng có thể hiểu dễ sử dụng nhất, và bỏ đi những thông tin không cần thiết về cách tạo ra chúng.
+ví dụ: Ta có đóng gói 1 túi đường, thì chúng ta in ra bên ngoài cách dùng đường, 
+thành phần các dưỡng chất của đường... Còn về cách tạo ra đường thì chúng ta sẽ che giấu nó đi, 
+để tránh gây phức tạp cho người dùng.
+ví dụ khác: 
+Ta xây dựng nên 1 cái interface cho việc tính diện tích cách hình khác nhau,
+Ta tạo ra 1 interface Shape với 1 phương thức tính diện tích. Người dùng ko cần biết cách mà 
+người ta tính diện tích như thế nào mà chỉ cần khởi tạo hình mà họ muốn tính diện tích và 
+gọi phương thức tính diện tích ra là xong. Ở đó Shape là abtract class, là lớp trừu tượng.
+
+Shape* shape = new Rectangle();
+shape->dientich();
+
+- tính đa hình: cùng 1 sự việc, vấn đề nhưng có những cách làm và biểu hiện khác nhau.
+có 2 dạng đa hình: 
+
+dạng 1: 
+1 class có nhiều hàm cùng tên nhưng khác về số lượng tham số, hoặc kiểu dữ liệu của tham số.
+(người ta gọi là những hàm như vậy là overloading). Nó là dạng đa hình compile time
+
+dạng 2:
+cùng tên, cùng số lượng tham số và kiểu dữ liệu tham số nhưng nó không phải ở cùng 1 class mà 
+1 thằng sẽ ở base class và 1 thằng sẽ được override lại ở derived class. Nó là dạng đa hình runtime

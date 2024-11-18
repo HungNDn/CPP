@@ -1,0 +1,7 @@
+
+
+int* ptr = new int[10];
+
+delete ptr; // ptr dang la con tro lo lung
+
+ptr = nullptr; // co y nghia la ko co vung nho nao duoc cap phat cho con tro nay

@@ -1,0 +1,50 @@
+struct co size = tong size cuar cac phan tu 
+union co size bang size cua phan tu lon nhat 
+
+union ko the truy cap dong thoi cac phan tu trong no cung 1 luc
+struct thi co the
+
+struct date
+{
+    int d;
+    int m;
+    long y;
+};
+ 
+void main()
+{
+    date dat = {4, 4, 2016};
+    printf("\nSize of struct: %d", sizeof(date));
+ 
+    printf("\ndate = %d", dat.d);
+    printf("\nmonth = %d", dat.m);
+    printf("\nyear = %d", dat.y);
+ 
+    getch();
+ 
+}
+
+union date
+{
+    int d;
+    int m;
+    int y;
+};
+ 
+void main()
+{
+    date dat;
+ 
+    printf("\nSize of union: %d", sizeof(date));
+     
+    dat.d = 24;
+    printf("\ndate = %d", dat.d);
+ 
+    dat.m = 9;
+    printf("\nmonth = %d", dat.m);
+ 
+    dat.y = 2014;
+    printf("\nyear = %d", dat.y);
+ 
+    getch();
+}

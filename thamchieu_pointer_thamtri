@@ -1,0 +1,8 @@
+- Truyền tham trị là chúng ta sẽ copy giá trị của biến để gán cho tham số hàm 
+=> Ko làm thay đổi giá trị của biến sau khi kết thúc hàm.
+
+- Truyền tham chiếu là chúng ta sẽ copy địa chỉ của biến để gán cho tham số hàm, không thể thay đổi được giá trị đang trỏ tới.
+=> Giá trị của biến sau khi kết thúc hàm sẽ bị thay đổi theo giá trị mà xảy ra trong hàm.
+
+-  Truyền con trỏ giống truyền tham chiếu nhưng có thể thay đổi được giá trị của con trỏ trỏ tới vùng nhớ khác 
+hoặc trỏ tới null.

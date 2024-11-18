@@ -1,0 +1,5 @@
+sizeof(int) = 4
+sizeof(int*) = 4 voi 32bit do pointer là 1 địa chỉ 0xFFFF(nên ở 32bit nó luôn có dạng 0xabcd => 4 byte)
+sizeof(int*) = 8 voi 64bit do pointer là 1 địa chỉ 0xFFFFFFFF(nên ở 64bit nó luôn có dạng 0xabcdefgh => 8 byte)
+sizeof(char*) = 4 voi 32bit
+sizeof(char*) = 8 voi 64bit

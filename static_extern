@@ -1,0 +1,10 @@
+Biến static là biến tạo ra 1 vùng nhớ duy nhất để lưu trữ giá trị cho tên biến,
+và vùng nhớ này sẽ được duy trì xuyên suốt chương trình, 
+vùng nhớ này chỉ được được giải phóng khi chương trình kết thúc.
+
+Mục đích nó sinh ra nhằm thiết lập chung giá trị chung cho tất cả các object trong c++:
+Ví dụ: Object người , số lượng tay của con người đều là 2 khi đó người ta dùng static int so_luong_tay = 2;
+
+extern: Là khi ta định nghĩa 1 biến global trong 1 file .c/.h/.cpp, truy cập biến này ở trong 1 file .c/.h/.cpp
+khác thì ta phải sử dụng từ khoá extern. Ta sẽ khai báo biến này ở cả 2 file đó và sẽ sử dụng từ khoá extern
+cho lần khai báo thứ 2;

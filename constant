@@ -1,0 +1,18 @@
+- Là từ khoá chỉ định 1 biến hay 1 đối tượng nào đó là hằng, 
+tức mọi hành động mà thay đổi giá trị của hằng đều được compile báo lỗi.
+
+- Constant khi khởi tạo thì phải gán giá trị => Nếu không trình biên dịch sẽ báo lỗi.
+
+int x, y;
+int* const p = &x => constant pointer(con trỏ hằng) 
+p = &y => lỗi biên dịch 
+
+const int x = 10
+int *p = &x => lỗi biên dịch vì x là 1 constant, 
+khi ta gán ô nhớ của x cho 1 pointer thì ta có thể sử dịch pointer để thay đổi giá trị của x => error
+khi đó ta phải sử dụng poniter to constant 
+const int* p = &x => pointer to constant 
+
+const : initialize in runtime
+constexpr : initialize in compile time
+

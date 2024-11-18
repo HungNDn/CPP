@@ -1,0 +1,4 @@
+- memory leak là hiện tượng xảy ra khi ta cấp phát 1 vùng nhớ trên heap và ko giải phóng nó sau khi dùng xong.
+Có thể check memory leak bằng gdb và valgrind.
+
+

@@ -1,0 +1,17 @@
+- Nó có thể lưu trữ mọi kiểu biến dữ liệu
+
+int a;
+float b;
+char c;
+void *p;
+p = &a; // address of a
+p = &b; // address of b
+p = &c; // address of c
+
+int a = 10;
+void *p = &a;
+int *ptr = p; // error
+
+int a = 10;
+void *p = &a;
+int *ptr = (int*)p; // OK

@@ -1,0 +1,2 @@
+- Cấp phát tĩnh là chúng ta sẽ cấp phát vùng nhớ khi biên dịch chương trình.
+- Cấp phát động là chúng ta sẽ cấp phát vùng nhớ đó khi chạy runtime.

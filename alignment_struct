@@ -1,0 +1,18 @@
+struct A
+{
+    char a;     // 1 byte + 3padding
+    int b;      // 4 bytes
+    short c;    // 2 bytes 
+    char d;     // 1 byte 
+    // c, d = 2short + 1char + 1padding
+};
+=> size = 4 + 4 + 4 = 12
+
+struct A {
+    short a;
+    char b;
+    char c;
+    int d; // 4 byte
+    // a, b, c = 2short + 1char+ 1char 
+}
+=> size = 4 + 4 = 8

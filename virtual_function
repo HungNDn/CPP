@@ -1,0 +1,19 @@
+- Được định nghĩa ở base class và được định nghĩa lại ở derived class. 
+- Virtual function là 1 cơ chế của c++ để tiến hành tính polymorphism(tính đa hình) 
+- Là 1 late binding (in runtime(override) còn early binding(in compile time overload)
+- Nếu ko dùng virtual function thì: 
+Base *x = new Derived();
+
+=> x sẽ gọi đến function của Base class(kiểu của con trỏ, ở đây kiểu của con trỏ là Base)
+
+- Pure Virtual function:
+Là 1 abstract function, chỉ khai báo ở base class với giá trị được gán = 0 mà ko định nghĩa nó.
+
+- Abstract class: 
+Là class chứa ít nhất 1 pure virtual function.
+Không thể tạo object của abstract class
+derived class cũng sẽ là 1 abstract class nếu nó ko pure virtual function ko được override lại
+
+Constructor ko thể là 1 virtual function
+Destructor có thể là 1 virtual function
+
